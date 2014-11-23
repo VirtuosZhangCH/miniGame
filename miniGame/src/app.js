@@ -13,9 +13,11 @@ var HelloWorldLayer = cc.Layer.extend({
         var size=cc.director.getWinSize();
         this._super();
         var bg=new cc.Sprite("#welcome_01.jpg");
+       // bg.anchorX-=size.width/2;
+       // bg.anchorY-=size.height/2
         this.addChild(bg,0);
-        bg.x=bg.height/2;//>>1;
-        bg.y=bg.width/2;//>>1;
+        bg.x=bg.height/2-90;//>>1;
+        bg.y=bg.width/2+90;//>>1;
         var testbt=new ChatBarLayer();
         //this.addChild(testbt,1);
         // add a "close" icon to exit the progress. it's an autorelease object
