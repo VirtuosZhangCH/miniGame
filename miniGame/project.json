@@ -11,7 +11,44 @@
     "modules" : ["cocos2d"],
 
     "jsList" : [
+        "src/miniGameComponent/notes/NotesApplication.js",
+        "src/miniGameComponent/notes/NotesComponent.js",
+        "src/miniGameComponent/notes/NotesGameDataUpdate.js",
+        "src/miniGameComponent/notes/NotesSound.js",
+        "src/com/virtuos/component/core/ServiceLocator.js",
+
+        "src/com/virtuos/component/application/patterns/observer/Notification.js",
+        "src/com/virtuos/component/application/patterns/observer/NotificationMap.js",
+        "src/com/virtuos/component/application/patterns/observer/Notifier.js",
+        "src/com/virtuos/component/application/patterns/observer/Observer.js",
+        "src/com/virtuos/component/application/patterns/command/SimpleCommand.js",
+        "src/com/virtuos/component/application/patterns/mediator/Mediator.js",
+        "src/com/virtuos/component/application/patterns/facade/Facade.js",
+        "src/com/virtuos/component/application/patterns/proxy/Proxy.js",
+        "src/com/virtuos/component/application/patterns/service/Service.js",
+
+        "src/com/virtuos/component/application/patterns/service/NewInstanceServiceLocatorEntry.js",
+        "src/com/virtuos/component/application/patterns/service/FactoryMethodServiceLocatorEntry.js",
+        "src/com/virtuos/component/application/patterns/service/SingletonServiceLocatorEntry.js",
+        "src/com/virtuos/signal/Signal.js",
+        "src/com/virtuos/component/core/Controller.js",
+        "src/com/virtuos/component/core/Model.js",
+        "src/com/virtuos/component/core/View.js",
+
+
+
+        "src/miniGameComponent/application/ComponentTypes.js",
+        "src/miniGameComponent/application/MiniGameFacade.js",
+
+        "src/miniGameComponent/view/elementsViews/ChatBarLayer.js",
+
+        "src/miniGameComponent/view/mediators/AbstractComponentMediator.js",
+        "src/miniGameComponent/view/mediators/GameViewMediator.js",
+
+
+
         "src/resource.js",
         "src/app.js"
+
     ]
 }

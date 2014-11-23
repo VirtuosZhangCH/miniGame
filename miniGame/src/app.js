@@ -13,8 +13,10 @@ var HelloWorldLayer = cc.Layer.extend({
         var size=cc.director.getWinSize();
         this._super();
 
+        var testbt=new ChatBarLayer();
+        this.addChild(testbt);
         // add a "close" icon to exit the progress. it's an autorelease object
-        var closeItem = new cc.MenuItemImage(
+       /* var closeItem = new cc.MenuItemImage(
             res.CloseNormal_png,
             res.CloseSelected_png,
             function () {
@@ -64,22 +66,21 @@ var HelloWorldLayer = cc.Layer.extend({
                 cc.moveBy(2.5, cc.p(0, size.height - 40)),
                 cc.tintTo(2.5,255,125,0)
             )
-        );
+        );*/
         return true;
     }
 });
 
 var HelloWorldScene = cc.Scene.extend({
     onEnter:function () {
-        cc.spriteFrameCache.addSpriteFrames(g_resources[2]);
-        cc.spriteFrameCache.addSpriteFrames(g_resources[3]);
+        cc.spriteFrameCache.addSpriteFrames(g_resources[4]);
         this._super();
         var layer = new HelloWorldLayer();
         this.addChild(layer);
 
         //start MVC here
         var _facade = MiniGameFacade.getInstance();
-        _facade.startup(layer,SlotGameViewMediator);
+        _facade.startup(layer,GameViewMediator);
 
     }
 });
