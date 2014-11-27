@@ -18,7 +18,10 @@ var HelloWorldLayer = cc.Layer.extend({
         this.addChild(bg,0);
         bg.x=bg.height/2-90;//>>1;
         bg.y=bg.width/2+90;//>>1;
-        var testbt=new ChatBarLayer();
+        this.chatBarLayer=new ChatBarLayer();
+        this.addChild(this.chatBarLayer);
+        this.chatBarLayer.x=320;
+        this.chatBarLayer.y=80;
         //this.addChild(testbt,1);
         // add a "close" icon to exit the progress. it's an autorelease object
        /* var closeItem = new cc.MenuItemImage(
