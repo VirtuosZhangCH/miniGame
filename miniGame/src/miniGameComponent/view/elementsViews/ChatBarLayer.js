@@ -6,26 +6,19 @@ var ChatBarLayer=cc.Sprite.extend({
     sigOnClick:new Signal(),
     ctor:function()
     {
-
         cc.Sprite.prototype.ctor.call(this);
         this.initBg();
         this.initButton();
         this.layout();
 
-    },
 
-    onEnter:function () {
-        this._super();
-
-        // add CCTextFieldTTF
-        var winSize = cc.director.getWinSize();
 
     },
 
     layout:function()
     {
-        this.SpinBt.x=247;
-        this.SpinBt.y=-10;
+       // this.SpinBt.x=247;
+        //this.SpinBt.y=-10;
 
         //this._tf.x=50;
      },
@@ -36,29 +29,35 @@ var ChatBarLayer=cc.Sprite.extend({
         var Spin2=new cc.Sprite("#ms_button_fs.png");
         var Spin3=new cc.Sprite("#ms_button_fs.png");
 
-        this.SpinBt=new cc.MenuItemSprite(Spin,Spin2,Spin3,this.onCallBack,this);
-
+        var SpinBt=new cc.MenuItemSprite(Spin,Spin2,Spin3,this.onCallBack,this);
+        SpinBt.retain();
         var greenBg=new cc.Sprite("#ms_button_left.png");
+        this.infoMenu=new cc.Menu(SpinBt);
+        this.infoMenu.retain();
 
-        this._tf=new cc.TextFieldTTF("12345", "Microsoft Yahei", 40);
-        this._tf.setHorizontalAlignment(cc.TEXT_ALIGNMENT_CENTER);
-        this._tf.color=0;
-        this._tf.setDelegate(this);
+        this._userName = new cc.EditBox(cc.size(459, 54), new cc.Scale9Sprite("qp_bg_mid.png"));
+        //this._userName.x = cc.winSize.width/2;
+        this._userName.setFontColor(new cc.Color(0,0,0,0));
+       // this._userName.y = 250;
+        this._userName.setFontSize(20);
+        this._userName.setPlaceHolder("Enter UserName");
+        this._userName.setDelegate(this);
+        this._userName.setMaxLength(20);
 
-       // this._trackNode =this._tf;
 
-        this.addChild(this.SpinBt);
         this.addChild(greenBg);
-        this.addChild(this._tf);
-
-        greenBg.x=-234;
+        this.addChild(this.infoMenu);
+        this.addChild(this._userName);
+        this.infoMenu.x=240;
+        this.infoMenu.y=-10;
+        greenBg.x=-234
         greenBg.y=-10;
     },
 
     onCallBack:function()
     {
         //test
-        this._tf.visible=false;
+       // this._tf.visible=false;
         //cc.eventManager.dispatchCustomEvent(SpinResponseEvent.SPIN_RESPONSE,"KKKOOO");
         this.sigOnClick.dispatch();
     },

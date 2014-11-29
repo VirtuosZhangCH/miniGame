@@ -19,7 +19,7 @@ var HelloWorldLayer = cc.Layer.extend({
         bg.x=bg.height/2-90;//>>1;
         bg.y=bg.width/2+90;//>>1;
         this.chatBarLayer=new ChatBarLayer();
-        this.addChild(this.chatBarLayer);
+        this.addChild(this.chatBarLayer,1);
         this.chatBarLayer.x=320;
         this.chatBarLayer.y=80;
         //this.addChild(testbt,1);
