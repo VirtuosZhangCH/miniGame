@@ -56,7 +56,7 @@ var ChatBarLayer=cc.Sprite.extend({
         //touch
         cc.eventManager.addListener({
             event: cc.EventListener.MOUSE,
-            onMouseUp: this.onMouseUp
+            onMouseUp: this.onMouseUp.bind(this)
         }, this);
 
         this.addChild(greenBg);
@@ -73,11 +73,9 @@ var ChatBarLayer=cc.Sprite.extend({
 
     onMouseUp:function (event) {
         var target = event.getCurrentTarget();
-        if (!this.te)
-            return;
 
-        var point = event.getLocation();
-        this.te.alpha=0;
+        var point = event.getLocationInView();
+        //this.te.alpha=0;
         // decide the trackNode is clicked.
         cc.log("KeyboardNotificationLayer:clickedAt(" + point.x + "," + point.y + ")");
 
@@ -91,15 +89,15 @@ var ChatBarLayer=cc.Sprite.extend({
 
     onClickTrackNode:function (clicked) {
         var textField = this.te;
-        if (clicked) {
+        //if (clicked) {
             // TextFieldTTFTest be clicked
             cc.log("TextFieldTTFDefaultTest:CCTextFieldTTF attachWithIME");
             textField.attachWithIME();
-        } else {
+       // } else {
             // TextFieldTTFTest not be clicked
-            cc.log("TextFieldTTFDefaultTest:CCTextFieldTTF detachWithIME");
-            textField.detachWithIME();
-        }
+           // cc.log("TextFieldTTFDefaultTest:CCTextFieldTTF detachWithIME");
+           // textField.detachWithIME();
+      //  }
     },
 
     onCallBack:function()
