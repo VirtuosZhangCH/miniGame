@@ -1,18 +1,28 @@
 /**
  * Created by zhangchi on 2014/9/5.
  */
-var ChatBarLayer=cc.Sprite.extend({
+var ChatUnit=cc.Sprite.extend({
     testBt:null,
     sigOnClick:new Signal(),
+    _status:0,
     ctor:function()
     {
         cc.Sprite.prototype.ctor.call(this);
+
+        cc.defineGetterSetter(this,"status",this.getStatus,this.setStatus);
         this.initBg();
         this.initButton();
         this.layout();
+    },
 
+    getStatus:function()
+    {
+        return this._status;
+    },
 
-
+    setStatus:function(value)
+    {
+        this._status=value
     },
 
     layout:function()

@@ -39,7 +39,8 @@
 
         "src/miniGameComponent/application/ComponentTypes.js",
         "src/miniGameComponent/application/MiniGameFacade.js",
-
+        "src/miniGameComponent/view/elements/ChatUnit.js",
+        "src/miniGameComponent/view/elementsViews/ToolLayer.js",
         "src/miniGameComponent/view/elementsViews/ChatBarLayer.js",
 
         "src/miniGameComponent/view/mediators/AbstractComponentMediator.js",
