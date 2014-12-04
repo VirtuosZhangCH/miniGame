@@ -13,6 +13,11 @@ var ChatUnit=cc.Sprite.extend({
         cc.defineGetterSetter(this,"status",this.getStatus,this.setStatus);
         this.initBg();
         this.layout();
+        this._pic=$picName;
+        this._status=$status;
+
+        this.pic=new cc.Sprite($picName);
+        this.addChild(this.pic);
     },
 
     getStatus:function()
@@ -27,8 +32,8 @@ var ChatUnit=cc.Sprite.extend({
 
     layout:function()
     {
-        this.topbg.y=20;
-        this.botbg.y=20;
+        this.topbg.y=15;
+        this.botbg.y=-30;
      },
 
 
@@ -42,9 +47,9 @@ var ChatUnit=cc.Sprite.extend({
 
     initBg:function()
     {
-        this.midbg=new cc.Sprite("#qp2_bg_mid.png");
-        this.topbg=new cc.Sprite("#qp2_bg_top.png");
-        this.botbg=new cc.Sprite("#qp2_bg_bottom.png");
+        this.midbg=new cc.Sprite("#qp_bg_mid.png");
+        this.topbg=new cc.Sprite("#qp_bg_top.png");
+        this.botbg=new cc.Sprite("#qp_bg_bottom.png");
 
         this.addChild(this.midbg);
         this.addChild(this.topbg);

@@ -22,14 +22,18 @@ var HelloWorldLayer = cc.Layer.extend({
         this.addChild(this.chatBarLayer,1);
 
         this.toolLayer=new ToolLayer();
-        this.addChild(this.toolLayer);
+        this.addChild(this.toolLayer,1);
 
         this.chatBarLayer.x=320;
         this.chatBarLayer.y=80;
 
         this.toolLayer.x=320;
         this.toolLayer.y=765;
-        //this.addChild(testbt,1);
+
+        var testUnit=new ChatUnit("#tx_01.png",1);
+        this.addChild(testUnit,2);
+
+        testUnit.y=50;
         // add a "close" icon to exit the progress. it's an autorelease object
        /* var closeItem = new cc.MenuItemImage(
             res.CloseNormal_png,
