@@ -10,9 +10,6 @@ var ChatUnitsLayer=cc.Sprite.extend({
         cc.Sprite.prototype.ctor.call(this);
         this.initElements();
         this.layout();
-
-
-
     },
 
     layout:function()
@@ -28,7 +25,12 @@ var ChatUnitsLayer=cc.Sprite.extend({
         var unit;
         for(var i=1;i<8;i++)
         {
-            unit=new ChatUnit("#tx_0"+ i.toString()+".png",1);
+            if(i==1) {
+                unit = new ChatUnit("#tx_0" + i.toString() + ".png", 0);
+            }else
+            {
+                unit = new ChatUnit("#tx_0" + i.toString() + ".png", 1);
+            }
             this.addChild(unit);
             unit.y=120+i*80;
         }

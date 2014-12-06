@@ -32,6 +32,13 @@ var ChatUnit=cc.Sprite.extend({
 
         this._chatGroup.x=230;
         this._desTf.x=120;
+
+        if( this._status==0)
+        {
+            this.botbg.x=25;
+            this.pic.x=
+            this._whiteCircle.x=485;
+        }
      },
 
     onCallBack:function()
@@ -56,9 +63,15 @@ var ChatUnit=cc.Sprite.extend({
         this.addChild(this._whiteCircle);
         this.addChild(this._chatGroup);
 
-        this.midbg=new cc.Sprite("#qp_bg_mid.png");
-        this.topbg=new cc.Sprite("#qp_bg_top.png");
-        this.botbg=new cc.Sprite("#qp_bg_bottom.png");
+        if($status==0){
+            this.midbg = new cc.Sprite("#qp2_bg_mid.png");
+            this.topbg = new cc.Sprite("#qp2_bg_top.png");
+            this.botbg = new cc.Sprite("#qp2_bg_bottom.png");
+        }else {
+            this.midbg = new cc.Sprite("#qp_bg_mid.png");
+            this.topbg = new cc.Sprite("#qp_bg_top.png");
+            this.botbg = new cc.Sprite("#qp_bg_bottom.png");
+        }
 
         this._chatGroup.addChild(this.topbg);
         this._chatGroup.addChild(this.botbg);
