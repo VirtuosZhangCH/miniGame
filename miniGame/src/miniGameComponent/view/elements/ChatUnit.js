@@ -24,6 +24,11 @@ var ChatUnit=cc.Sprite.extend({
         this._status=value;
     },
 
+    setText:function(value)
+    {
+        this._desTf.setString(value);
+    },
+
     layout:function()
     {
         this.topbg.y=16;
@@ -31,7 +36,9 @@ var ChatUnit=cc.Sprite.extend({
         this.botbg.y=-19;
 
         this._chatGroup.x=230;
-        this._desTf.x=120;
+        //this._desTf.x=120;
+
+
      },
 
     onCallBack:function()
@@ -50,6 +57,7 @@ var ChatUnit=cc.Sprite.extend({
 
         this._desTf=new cc.LabelTTF("这就是异常","Microsoft Yahei",20);
         this._desTf.setFontFillColor(new cc.Color(0,0,0,0));
+        this._desTf.setHorizontalAlignment(cc.TEXT_ALIGNMENT_CENTER);
 
         this.pic=new cc.Sprite($picName);
         this.addChild(this.pic);
@@ -64,6 +72,6 @@ var ChatUnit=cc.Sprite.extend({
         this._chatGroup.addChild(this.botbg);
         this._chatGroup.addChild(this.midbg);
 
-        this.addChild(this._desTf);
+        this._chatGroup.addChild(this._desTf);
     }
 })
