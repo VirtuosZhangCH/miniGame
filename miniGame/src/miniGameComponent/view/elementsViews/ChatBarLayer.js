@@ -42,7 +42,7 @@ var ChatBarLayer=cc.Sprite.extend({
         //this._userName.setHorizontalAlignment(cc.TEXT_ALIGNMENT_CENTER);
         this._userName.setFontColor(new cc.Color(0,0,0,0));
         this._userName.setFontSize(20);
-        this._userName.setPlaceHolder("Enter UserName");
+        this._userName.setPlaceHolder("Enter Message");
         this._userName.setDelegate(this);
         this._userName.setMaxLength(20);
 
@@ -105,7 +105,11 @@ var ChatBarLayer=cc.Sprite.extend({
         //test
        // this._tf.visible=false;
         //cc.eventManager.dispatchCustomEvent(SpinResponseEvent.SPIN_RESPONSE,"KKKOOO");
-        this.sigOnClick.dispatch();
+        if(this._userName.getString()!="") {
+            var message = this._userName.getString();
+            this._userName.setString("");
+            this.sigOnClick.dispatch(message);
+        }
     },
 
     initBg:function()

@@ -38,6 +38,11 @@ var ChatUnitsLayer=cc.Sprite.extend({
         }
     },
 
+    updateMyMessage:function($message)
+    {
+        this.unitArr[0].setText($message);
+    },
+
     onCallBack:function()
     {
         //test

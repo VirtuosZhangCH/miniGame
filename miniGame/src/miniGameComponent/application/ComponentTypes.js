@@ -18,5 +18,5 @@ ComponentTypes.BIG_WIN_COIN_SHOWER  = "ComponentTypes_BIG_WIN_COIN_SHOWER";*/
 /**
  * V2 slot components
  */
-ComponentTypes.SYMBOLS_LAYER  = "ComponentTypes_SYMBOLS_LAYER";
-ComponentTypes.WINNING_SYMBOLS_LAYER  = "ComponentTypes_WINNING_SYMBOLS_LAYER";
+ComponentTypes.CHAT_BAR  = "ComponentTypes_CHAT_BAR";
+ComponentTypes.CHAT_UNITS  = "ComponentTypes_CHAT_UNITS";

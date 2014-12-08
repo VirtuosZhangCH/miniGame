@@ -36,7 +36,6 @@ var ChatUnit=cc.Sprite.extend({
         this.botbg.y=-19;
 
         this._chatGroup.x=230;
-        this._desTf.x=120;
 
         if( this._status==0)
         {

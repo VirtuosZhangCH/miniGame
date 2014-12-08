@@ -1,19 +1,22 @@
 /**
+ * Created by zhangchi on 2014/12/8.
+ */
+/**
  * Created by zhangchi on 2014/9/5.
  */
-var GameViewMediator=AbstractComponentMediator.extend({
+var ChatBarMediator=AbstractComponentMediator.extend({
     _view:null,
 
-    ctor:function(viewComponent)
+    ctor:function(name,viewComponent)
     {
-        this._super(ComponentTypes.MAIN_VIEW,viewComponent);
+        this._super(name,viewComponent);
         this._view=viewComponent;
     },
 
-   /* getMediatorName:function()
-    {
-        return this.mediatorName;
-    },*/
+    /* getMediatorName:function()
+     {
+     return this.mediatorName;
+     },*/
     mapNotifications:function()
     {
         //this.notificationMap.add("test",this.handleTest,this);
@@ -21,8 +24,12 @@ var GameViewMediator=AbstractComponentMediator.extend({
 
     onRegister:function()
     {
-        this.facade.registerMediator(new ChatBarMediator(ComponentTypes.CHAT_BAR,this._view.chatBarLayer));
-        this.facade.registerMediator(new ChatUnitsMediator(ComponentTypes.CHAT_UNITS,this._view.chatLayer));
+        this._view.sigOnClick.add(this.onClickChat,this);
+    },
+
+    onClickChat:function($message)
+    {
+        this.sendNotification(NotesComponent.CHAT_BUTTON_CLICKED,$message);
     },
 
     onPointTest:function()
