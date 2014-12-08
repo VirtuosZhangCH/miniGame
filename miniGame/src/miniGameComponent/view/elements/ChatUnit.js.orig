@@ -36,6 +36,11 @@ var ChatUnit=cc.Sprite.extend({
         this.botbg.y=-19;
 
         this._chatGroup.x=230;
+<<<<<<< HEAD
+        //this._desTf.x=120;
+
+
+=======
         this._desTf.x=120;
 
         if( this._status==0)
@@ -44,6 +49,7 @@ var ChatUnit=cc.Sprite.extend({
             this.pic.x=
             this._whiteCircle.x=485;
         }
+>>>>>>> a84ec135d6c6d6d59535e1da7487c4de4af4993a
      },
 
     onCallBack:function()
