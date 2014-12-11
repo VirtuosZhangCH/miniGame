@@ -5,6 +5,7 @@ var ChatUnitsLayer=cc.Sprite.extend({
     testBt:null,
     sigOnClick:new Signal(),
     unitArr:[],
+
     ctor:function()
     {
         cc.Sprite.prototype.ctor.call(this);
@@ -14,10 +15,17 @@ var ChatUnitsLayer=cc.Sprite.extend({
 
     layout:function()
     {
-       // this.SpinBt.x=247;
-        //this.SpinBt.y=-10;
-
-        //this._tf.x=50;
+       /*var  name="The Win";
+       var obj={
+           name:"My obj",
+           getName:function(){
+               var that=this;
+               return function(){
+                   return that.name;
+               }
+           }
+       }
+        cc.log(obj.getName()());*/
      },
 
     initElements:function()
