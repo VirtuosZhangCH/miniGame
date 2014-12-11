@@ -25,16 +25,19 @@ var ChatUnitsLayer=cc.Sprite.extend({
         var unit;
         for(var i=1;i<8;i++)
         {
-            if(i==1) {
+            if(i==1)
+            {
                 unit = new ChatUnit("#tx_0" + i.toString() + ".png", 0);
             }else
             {
                 unit = new ChatUnit("#tx_0" + i.toString() + ".png", 1);
             }
+
             this.addChild(unit);
-           this.unitArr.push(unit);
-            unit.setText("这里将来是聊天内容");
-            unit.y=120+i*80;
+            this.unitArr.push(unit);
+            unit.Number=8-i;
+            unit.setText("我准备好啦!");
+            unit.y=105+i*84;
         }
     },
 
