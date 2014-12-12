@@ -24,8 +24,6 @@ var TipLayer=cc.Sprite.extend({
 
     initButton:function()
     {
-
-
         var Spin=new cc.Sprite("#fpch_close.png");
         var Spin2=new cc.Sprite("#fpch_close.png");
         var Spin3=new cc.Sprite("#fpch_close.png");
@@ -41,41 +39,16 @@ var TipLayer=cc.Sprite.extend({
 
     showLayer:function()
     {
-
+       /* reelSprite2.runAction(cc.sequence(
+            cc.moveBy(.2,cc.p(0,0-this.roleBack-this.stoprollBack)),
+            cc.CallFunc.create(this.onStopReel,this)
+        ));*/
     },
 
     onCallBack:function()
     {
 
     },
-    /*onMouseUp:function (event) {
-        var target = event.getCurrentTarget();
-        var point = event.getLocationInView();
-        //this.te.alpha=0;
-        // decide the trackNode is clicked.
-        cc.log("KeyboardNotificationLayer:clickedAt(" + point.x + "," + point.y + ")");
-
-        var rect = textInputGetRect(this.te);
-        cc.log("KeyboardNotificationLayer:TrackNode at(origin:" + rect.x + "," + rect.y
-            + ", size:" + rect.width + "," + rect.height + ")");
-
-        target.onClickTrackNode(cc.rectContainsPoint(rect, point));
-        cc.log("----------------------------------");
-    },
-
-    onClickTrackNode:function (clicked) {
-        var textField = this.te;
-        //if (clicked) {
-            // TextFieldTTFTest be clicked
-            cc.log("TextFieldTTFDefaultTest:CCTextFieldTTF attachWithIME");
-            textField.attachWithIME();
-       // } else {
-            // TextFieldTTFTest not be clicked
-           // cc.log("TextFieldTTFDefaultTest:CCTextFieldTTF detachWithIME");
-           // textField.detachWithIME();
-      //  }
-    },*/
-
 
     initBg:function()
     {
