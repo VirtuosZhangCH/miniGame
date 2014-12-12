@@ -17,43 +17,37 @@ var TipLayer=cc.Sprite.extend({
        // this.SpinBt.x=247;
         //this.SpinBt.y=-10;
         //this._tf.x=50;
+
+        this.closeMenu.x=this.bg.width/2-20;
+        this.closeMenu.y=this.bg.height/2-20;
      },
 
     initButton:function()
     {
-        var Spin=new cc.Sprite("#ms_button_fs.png");
-        var Spin2=new cc.Sprite("#ms_button_fs.png");
-        var Spin3=new cc.Sprite("#ms_button_fs.png");
+
+
+        var Spin=new cc.Sprite("#fpch_close.png");
+        var Spin2=new cc.Sprite("#fpch_close.png");
+        var Spin3=new cc.Sprite("#fpch_close.png");
 
         var SpinBt=new cc.MenuItemSprite(Spin,Spin2,Spin3,this.onCallBack,this);
         SpinBt.retain();
-        var greenBg=new cc.Sprite("#ms_button_left.png");
-        this.infoMenu=new cc.Menu(SpinBt);
-        this.infoMenu.retain();
 
-        //this.textF=new cc.TextFieldTTF("Click here");
-        //this.textF.setDelegate(this);
-        //this.textF.setColor(new cc.Color(0,0,0,0));
-        this._userName = new cc.EditBox(cc.size(200, 54), new cc.Scale9Sprite("qp_bg_mid.png"));
-        //this._userName.setHorizontalAlignment(cc.TEXT_ALIGNMENT_CENTER);
-        this._userName.setFontColor(new cc.Color(0,0,0,0));
-        this._userName.setFontSize(20);
-        this._userName.setPlaceHolder("Enter Message");
-        this._userName.setDelegate(this);
-        this._userName.setMaxLength(20);
+        this.closeMenu=new cc.Menu(SpinBt);
+        this.closeMenu.retain();
 
-        this.addChild(greenBg);
-        this.addChild(this.infoMenu);
-        this.addChild(this._userName);
-
-        //this.addChild(this.te);
-
-        this.infoMenu.x=240;
-        this.infoMenu.y=-10;
-        greenBg.x=-234
-        greenBg.y=-10;
+        this.addChild(this.closeMenu);
     },
 
+    showLayer:function()
+    {
+
+    },
+
+    onCallBack:function()
+    {
+
+    },
     /*onMouseUp:function (event) {
         var target = event.getCurrentTarget();
         var point = event.getLocationInView();
@@ -82,22 +76,11 @@ var TipLayer=cc.Sprite.extend({
       //  }
     },*/
 
-    onCallBack:function()
-    {
-        //test
-       // this._tf.visible=false;
-        //cc.eventManager.dispatchCustomEvent(SpinResponseEvent.SPIN_RESPONSE,"KKKOOO");
-        if(this._userName.getString()!="") {
-            var message = this._userName.getString();
-            this._userName.setString("");
-            this.sigOnClick.dispatch(message);
-        }
-    },
 
     initBg:function()
     {
-        var bg=new cc.Sprite("#ms_bottombg.png");
-        this.addChild(bg);
+        this.bg=new cc.Sprite("#fpch_bg.png");
+        this.addChild(this.bg);
     }
 })
 
