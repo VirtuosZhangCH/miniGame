@@ -8,21 +8,21 @@ var TipLayer=cc.Sprite.extend({
     {
         cc.Sprite.prototype.ctor.call(this);
         this.initBg();
-        this.initButton();
+        this.initChildrens();
         this.layout();
+
+        this.showLayer();
     },
 
     layout:function()
     {
-       // this.SpinBt.x=247;
-        //this.SpinBt.y=-10;
-        //this._tf.x=50;
-
         this.closeMenu.x=this.bg.width/2-20;
+        this.whiteBoardContainer.y=900;
+        //this.whiteBoardContainer.visible=false;
         this.closeMenu.y=this.bg.height/2-20;
      },
 
-    initButton:function()
+    initChildrens:function()
     {
         var Spin=new cc.Sprite("#fpch_close.png");
         var Spin2=new cc.Sprite("#fpch_close.png");
@@ -30,19 +30,34 @@ var TipLayer=cc.Sprite.extend({
 
         var SpinBt=new cc.MenuItemSprite(Spin,Spin2,Spin3,this.onCallBack,this);
         SpinBt.retain();
+        //SpinBt.y=5;
 
         this.closeMenu=new cc.Menu(SpinBt);
         this.closeMenu.retain();
 
-        this.addChild(this.closeMenu);
+        this.whiteBoardContainer.addChild(this.closeMenu);
+
+        this.resultBoardContainer=new cc.Sprite();
+        this.yellowBoard=new cc.Sprite("#tk_lose_mid.png");
+        this.titleLoss=new cc.Sprite("#tk_lose_top.png");
+        this.titleWin=new cc.Sprite("#tk_win_top.png");
     },
 
     showLayer:function()
     {
-       /* reelSprite2.runAction(cc.sequence(
-            cc.moveBy(.2,cc.p(0,0-this.roleBack-this.stoprollBack)),
-            cc.CallFunc.create(this.onStopReel,this)
-        ));*/
+        this.whiteBoardContainer.visible=true;
+        var delay = cc.delayTime(2);
+        this.whiteBoardContainer.runAction(cc.sequence(
+            cc.moveBy(2,cc.p(0,-900)),
+            delay,
+            cc.moveBy(2,cc.p(0,-1200)),
+            cc.callFunc(this.onStopReel,this)
+        ));
+    },
+
+    onStopReel:function()
+    {
+        this.whiteBoardContainer.visible=false;
     },
 
     onCallBack:function()
@@ -52,14 +67,10 @@ var TipLayer=cc.Sprite.extend({
 
     initBg:function()
     {
+        this.whiteBoardContainer=new cc.Sprite();
         this.bg=new cc.Sprite("#fpch_bg.png");
-        this.addChild(this.bg);
+        //this.addChild(this.bg);
+        this.whiteBoardContainer.addChild(this.bg);
+        this.addChild(this.whiteBoardContainer);
     }
 })
-
-var textInputGetRect = function (node) {
-    var rc = cc.rect(node.x, node.y, node.width, node.height);
-    rc.x -= rc.width / 2;
-    rc.y -= rc.height / 2;
-    return rc;
-};
