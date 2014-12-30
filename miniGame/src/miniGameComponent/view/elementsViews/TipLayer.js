@@ -17,9 +17,11 @@ var TipLayer=cc.Sprite.extend({
     layout:function()
     {
         this.closeMenu.x=this.bg.width/2-20;
-        this.whiteBoardContainer.y=900;
+        this.whiteBoardContainer.y=600;
         //this.whiteBoardContainer.visible=false;
         this.closeMenu.y=this.bg.height/2-20;
+        this._desTf.y=50;
+       // this._desTf.x=this.bg.width/2-20;
      },
 
     initChildrens:function()
@@ -41,6 +43,18 @@ var TipLayer=cc.Sprite.extend({
         this.yellowBoard=new cc.Sprite("#tk_lose_mid.png");
         this.titleLoss=new cc.Sprite("#tk_lose_top.png");
         this.titleWin=new cc.Sprite("#tk_win_top.png");
+
+        this._desTf=new cc.LabelTTF("你的词语是","Microsoft Yahei",20);
+        this._desTf.setFontFillColor(new cc.Color(0,200,200,0));
+        this._desTf.setHorizontalAlignment(cc.TEXT_ALIGNMENT_CENTER);
+
+        this._wordTf=new cc.LabelTTF("最多四字","Microsoft Yahei",50);
+        this._wordTf.setFontFillColor(new cc.Color(200,100,130,0));
+        this._wordTf.setHorizontalAlignment(cc.TEXT_ALIGNMENT_CENTER);
+
+        this.whiteBoardContainer.addChild(this._desTf);
+        this.whiteBoardContainer.addChild(this._wordTf);
+
     },
 
     showLayer:function()
@@ -48,9 +62,9 @@ var TipLayer=cc.Sprite.extend({
         this.whiteBoardContainer.visible=true;
         var delay = cc.delayTime(2);
         this.whiteBoardContainer.runAction(cc.sequence(
-            cc.moveBy(2,cc.p(0,-900)),
+            cc.moveBy(.5,cc.p(0,-500)),
             delay,
-            cc.moveBy(2,cc.p(0,-1200)),
+            cc.moveBy(.5,cc.p(0,-1200)),
             cc.callFunc(this.onStopReel,this)
         ));
     },
