@@ -11,7 +11,6 @@ var HelloWorldLayer = cc.Layer.extend({
         //    you may modify it.
         // ask the window size
         var size=cc.director.getWinSize();
-        this._super();
         var bg=new cc.Sprite("#welcome_01.jpg");
        // bg.anchorX-=size.width/2;
        // bg.anchorY-=size.height/2

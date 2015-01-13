@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="mock:///JavaScript Console" />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="c04a97c6-2021-4b34-9533-a9d434194036" name="Default" comment="" />
     <ignored path="miniGame.iws" />
@@ -29,7 +26,7 @@
       <file leaf-file-name="GameViewMediator.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/miniGameComponent/view/mediators/GameViewMediator.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="249" max-vertical-offset="817">
+            <state vertical-scroll-proportion="0.0" vertical-offset="437" max-vertical-offset="817">
               <caret line="23" column="38" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
               <folding />
             </state>
@@ -39,7 +36,7 @@
       <file leaf-file-name="ChatBarLayer.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/miniGameComponent/view/elementsViews/ChatBarLayer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1767" max-vertical-offset="2508">
+            <state vertical-scroll-proportion="0.0" vertical-offset="839" max-vertical-offset="2508">
               <caret line="110" column="46" selection-start-line="110" selection-start-column="46" selection-end-line="110" selection-end-column="46" />
               <folding />
             </state>
@@ -49,8 +46,8 @@
       <file leaf-file-name="ChatUnitsLayer.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/miniGameComponent/view/elementsViews/ChatUnitsLayer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="563" max-vertical-offset="1349">
-              <caret line="37" column="35" selection-start-line="37" selection-start-column="27" selection-end-line="37" selection-end-column="35" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="475" max-vertical-offset="1349">
+              <caret line="40" column="35" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -59,8 +56,8 @@
       <file leaf-file-name="TipLayer.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/miniGameComponent/view/elementsViews/TipLayer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6935484" vertical-offset="487" max-vertical-offset="1330">
-              <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.45809415" vertical-offset="665" max-vertical-offset="1805">
+              <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -69,8 +66,18 @@
       <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="228" max-vertical-offset="1254">
-              <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="228" max-vertical-offset="1235">
+              <caret line="16" column="28" selection-start-line="13" selection-start-column="7" selection-end-line="16" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="resource.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/resource.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
+              <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -79,8 +86,8 @@
       <file leaf-file-name="ChatUnit.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/miniGameComponent/view/elements/ChatUnit.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1881" max-vertical-offset="3002">
-              <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1938" max-vertical-offset="3002">
+              <caret line="123" column="69" selection-start-line="121" selection-start-column="7" selection-end-line="123" selection-end-column="69" />
               <folding />
             </state>
           </provider>
@@ -167,7 +174,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -550,6 +556,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -557,7 +564,7 @@
     <property name="recentsLimit" value="5" />
     <property name="FullScreen" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/index.html" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="options.lastSelected" value="reference.idesettings.debugger.javascript" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
@@ -651,14 +658,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1698" height="1020" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21726191" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34816462" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3303671" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -697,13 +704,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/core/sprites/SpritesWebGL.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="931" max-vertical-offset="11153">
-          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/core/cocoa/CCGeometry.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1083" max-vertical-offset="6327">
@@ -815,13 +815,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="513" max-vertical-offset="5871">
           <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resource.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
-          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -1007,15 +1000,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5822306" vertical-offset="471" max-vertical-offset="1178">
           <caret line="41" column="53" selection-start-line="41" selection-start-column="53" selection-end-line="41" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/miniGameComponent/view/elements/ChatUnit.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1881" max-vertical-offset="3002">
-          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1023,15 +1007,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3512545" vertical-offset="7442" max-vertical-offset="10963">
           <caret line="402" column="16" selection-start-line="402" selection-start-column="16" selection-end-line="402" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/miniGameComponent/view/elementsViews/ChatUnitsLayer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="563" max-vertical-offset="1349">
-          <caret line="37" column="35" selection-start-line="37" selection-start-column="27" selection-end-line="37" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1039,6 +1014,45 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="249" max-vertical-offset="817">
           <caret line="23" column="38" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/core/sprites/CCSprite.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-43.615513" vertical-offset="31713" max-vertical-offset="32319">
+          <caret line="302" column="0" selection-start-line="302" selection-start-column="0" selection-end-line="302" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/miniGameComponent/view/elementsViews/ChatUnitsLayer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="475" max-vertical-offset="1349">
+          <caret line="40" column="35" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/miniGameComponent/view/elements/ChatUnit.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1938" max-vertical-offset="3002">
+          <caret line="123" column="69" selection-start-line="121" selection-start-column="7" selection-end-line="123" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resource.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
+          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="228" max-vertical-offset="1235">
+          <caret line="16" column="28" selection-start-line="13" selection-start-column="7" selection-end-line="16" selection-end-column="28" />
           <folding />
         </state>
       </provider>
@@ -1051,18 +1065,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="228" max-vertical-offset="1254">
-          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/miniGameComponent/view/elementsViews/TipLayer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6935484" vertical-offset="487" max-vertical-offset="1330">
-          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.45809415" vertical-offset="665" max-vertical-offset="1805">
+          <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
           <folding />
         </state>
       </provider>
