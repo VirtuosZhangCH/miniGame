@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Toolbox>
+   <Click ClickName="原理介绍">
+         <news newsName="质量空气流量计特性" newsUrl="B2_05_04.swf" newsString=""/>
+         <news newsName="质量空气流量计特性工作原理" newsUrl="B2_03_01.swf" newsString=""/>
+         <news newsName="质量空气流量计电路图" newsUrl="B2_05_01.swf" newsString=""/>         
+      </Click>
+   <Click ClickName="实训指导">
+         <news newsName="IT2使用说明" newsUrl="IT2.swf" newsString=""/>
+	 <news newsName="认识发动机舱" newsUrl="Engine.swf" newsString=""/>  
+	 <news newsName="排故思路" newsUrl="sl.swf" newsString=""/>     
+      </Click>
+   <Click ClickName="教学资源">
+         <news newsName="氧传感器加热控制线电路低电位(S1)" newsUrl="P0031.jpg" newsString=""/>
+         <news newsName="氧传感器加热控制线电路高电位(S1)" newsUrl="P0032.jpg" newsString=""/>
+	  <news newsName="氧传感器加热控制线电路低电位(S2)" newsUrl="P0037.jpg" newsString=""/>
+         <news newsName="氧传感器加热控制线电路高电位(S2)" newsUrl="P0038.jpg" newsString=""/>
+	  <news newsName="质量或体积空气流量电路低输入" newsUrl="P0102.jpg" newsString=""/>
+	  <news newsName="发动机冷却液温度电路范围-性能故障" newsUrl="P0116.jpg" newsString=""/>
+	  <news newsName="节气门-踏板位置传感器-开关“A”电路低输入" newsUrl="P0122.jpg" newsString=""/>
+	  <news newsName="节气门-踏板位置传感器-开关“开关”电路高输入" newsUrl="P0123.jpg" newsString=""/>
+	  <news newsName="氧传感器电路故障(S1)" newsUrl="P0130.jpg" newsString=""/>
+	  <news newsName="氧传感器电路故障(S2)" newsUrl="P0136.jpg" newsString=""/>
+	  <news newsName="节气门-踏板位置传感器-开关“B”电路低输入" newsUrl="P0222.jpg" newsString=""/>
+	  <news newsName="节气门-踏板位置传感器-开关“B”电路高输入" newsUrl="P0223.jpg" newsString=""/>
+	  <news newsName="检查到1号气缸缺火" newsUrl="P0301.jpg" newsString=""/>
+	  <news newsName="检查到2号气缸缺火" newsUrl="P0302.jpg" newsString=""/>
+	  <news newsName="检查到3号气缸缺火" newsUrl="P0303.jpg" newsString=""/>
+	  <news newsName="检查到4号气缸缺火" newsUrl="P0304.jpg" newsString=""/>
+	  <news newsName="曲轴位置传感器“A”电路" newsUrl="P0335.jpg" newsString=""/>
+	  <news newsName="节气门执行器控制电动机电路低电位" newsUrl="P2102.jpg" newsString=""/>
+         <news newsName="节气门执行器控制电动机电路高电位" newsUrl="P2103.jpg" newsString=""/>
+         <news newsName="节气门执行器控制系统-卡在打开位置" newsUrl="P2111.jpg" newsString=""/>
+         <news newsName="节气门执行器控制系统-卡在关闭位置" newsUrl="P2112.jpg" newsString=""/>
+         <news newsName="节气门执行器控制电动机电流范围或性能" newsUrl="P2118.jpg" newsString=""/>
+         <news newsName="氧传感器信号始终偏稀(S1)" newsUrl="P2195.jpg" newsString=""/>
+	  <news newsName="氧传感器信号始终偏浓(S1)" newsUrl="P2196.jpg" newsString=""/>
+	  <news newsName="喷油器电路" newsUrl="喷油器电路.jpg" newsString=""/>
+      </Click>
+</Toolbox>
