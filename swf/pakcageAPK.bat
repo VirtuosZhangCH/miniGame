@@ -1,1 +1,1 @@
-adt -package -target apk-captive-runtime -storetype pkcs12 -keystore cert\android.p12 -storepass 1234 D:\HTML5projectr3.0\MiniGame\swf\ftfdjcz.apk ftfdjcz-app.xml ftfdjcz.swf
+adt -package -target apk-captive-runtime -storetype pkcs12 -keystore cert\android.p12 -storepass 1234 D:\HTML5projectr3.0\MiniGame\swf\ftfdjcz.apk ftfdjcz-app.xml ftfdjcz.swf swf
